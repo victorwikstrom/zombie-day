@@ -1,11 +1,17 @@
 /**
- * 
+ * Contains informaton about the players current environment
  */
 
 const room = {
   roomName, 
-  roomDescription, 
+  roomInfo, 
+  navigationInfoLeft,
+  navigationInfoRight,
 }
+
+/**
+ * Contains information about the player. 
+ */
 
 const player = {
   playerName,
