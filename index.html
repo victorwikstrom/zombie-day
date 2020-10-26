@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- CSS link -->
-  <link rel="stylesheet" href="style.css">
 
-  <!-- JS links -->
-  <script src="./script.js"></script>
-  <script src="./objects.js"></script>
-  <script src="./functions.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./script.js"></script>
 
   <title>Zombie Day</title>
 
@@ -18,40 +13,31 @@
 <body>
   <!-- Game header -->
   <header>
-    <div class="header-container flex vertical center">
-      <div class="game-name-container flex center">
+    <div class='header-container flex vertical center'>
+      <div class='game-name-container flex center'>
         <h1>Zombie Day</h1>
       </div>
-      <div class="player-info-container flex center space-between">
+      <div class='player-info-container flex'>
         <h3>Player name: </h3>
-        <h3>Age: </h3>
-        <h3>Gender: </h3>
+        <div id='player-name'>Name</div>
       </div>
     </div>
   </header>
   
   <!-- Main game area -->
   <main>
-    <div class="room-info-container">
-      <div class="room-image-container flex center">
-        <div class="room-description-container">
-          <p class="room-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis inventore beatae ut voluptatum hic nulla, mollitia esse quod eaque incidunt ipsa, necessitatibus aspernatur facere soluta sit voluptate praesentium sapiente architecto.</p>
-        </div>
+    <div class='room-info-container'>
+      <div id='room-image' class='room-image-container flex center'>
+        <div id='room-info' class='room-info'></div>
       </div>
     </div>
 
-    <div class="navigation-container flex space-between">
-      <div class="navigation-wrapper-left flex vertical center">
-        <button class="navigation-button left-button">Go left</button>
-        <p class="navigation-info-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore est cumque labore! Distinctio fuga alias odit libero natus rerum nisi placeat facilis voluptatum, ipsam perferendis, labore est non assumenda.</p>
-      </div>
-      <div class="navigation-wrapper-right flex vertical center">
-        <button class="navigation-button right-button">Go right</button>
-        <p class="navigation-info-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore est cumque labore! Distinctio fuga alias odit libero natus rerum nisi placeat facilis voluptatum, ipsam perferendis, labore est non assumenda.</p>
-      </div>
+    <div id="option-buttons" class='navigation-grid'>
+        <button class='button'>Option 1</button>
+        <button class='button'>Option 2</button>
+        <button class='button'>Option 3</button>
+        <button class='button'>Option 4</button>
     </div>
-
-
   </main> 
 </body>
 </html>
