@@ -60,11 +60,16 @@ h1, h2, h3 {
   color: white;
   padding: 1rem;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*--------- Navigation area ----------*/
 
-.navigation-grid {
+.nav-grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 20px;
