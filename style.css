@@ -16,6 +16,11 @@ button { border: none; }
 body { margin: 0; font-weight: 400; box-sizing: border-box; }
 input:focus, select:focus, textarea:focus, button:focus { outline: none; }
 
+@font-face {
+  font-family: "Bloc";
+  src: url(./fonts/Bloc\ W01\ Regular.ttf);
+}
+
 /*--------- Global design ----------*/
 
 body {
@@ -25,6 +30,9 @@ body {
   width: 100%;
   max-height: 100vh;
   padding: 1rem 2rem;
+
+  font-family: Bloc;
+  letter-spacing: 0.5px;
 }
 
 h1, h2, h3 {
@@ -48,10 +56,9 @@ h1, h2, h3 {
   height: 80vh;
   width: 100%;
   margin: auto;
-  
-  background-image: url(./imgs/zombies-2.jpg);
-  background-position: center;
-  background-size: cover;
+
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 .room-info {
@@ -65,6 +72,14 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  height: 60%;
+  width: 90%;
+}
+
+.info-text {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 /*--------- Navigation area ----------*/
@@ -85,7 +100,8 @@ h1, h2, h3 {
   background: transparent;
   color: white;
   border: 2px solid white;
-  text-transform: uppercase;
+  font-family: Bloc;
+  font-size: 1.5rem;
 }
 
 .button:hover {

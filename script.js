@@ -6,11 +6,13 @@ const roomImageElement = document.getElementById('room-image')
 const roomInfoElement = document.getElementById('room-info')
 const navGrid = document.getElementById('nav-grid') 
 
+roomInfoElement.classList.add('info-text')
 
-sh/* ------------------------------- FUNCTIONS ----------------------------------- */
+
+/* ------------------------------- FUNCTIONS ----------------------------------- */
 
 /** Initates the game loads the room number one. */
- function initGame() {
+ function startGame() {
   loadRoom(1)
  }
 
@@ -41,8 +43,6 @@ function loadRoomInfo(currentRoom, infoIndex) {
     const roomInfo = currentRoom.infoList[infoIndex].text
     roomInfoElement.innerText = roomInfo
     createNextButton(currentRoom, infoIndex)
-    console.log('length= ' + currentRoom.infoList.length)
-    console.log('i= ' + infoIndex)
 }
 
 /**
@@ -55,12 +55,8 @@ function createNextButton(currentRoom, infoIndex) {
   const nextButton = document.createElement('button')
   nextButton.innerText = '>>'
   nextButton.classList.add('button')
-  roomInfoElement.appendChild(nextButton)
   nextButton.addEventListener('click', () => showNextInfo(currentRoom, infoIndex))
-}
-
-function removeNextButton() {
-  roomInfoElement.removeChild(roomInfoElement.firstChild)
+  roomInfoElement.appendChild(nextButton)
 }
 
 /**
@@ -87,12 +83,21 @@ function showNextInfo(currentRoom, infoIndex) {
  * @param {Number} infoIndex 
  */
 function loadOptionButtons(currentRoom, infoIndex) {
+  
   options = currentRoom.infoList[infoIndex].optionList
+
   for (const option of options) {
+
     const optionButton = document.createElement('button')
     optionButton.innerText = option.text
     optionButton.classList.add('button')
     navGrid.appendChild(optionButton)
+    const nextRoom = option.nextRoom
+    console.log(nextRoom)
+
+    optionButton.addEventListener('click', function loadNextRoom(option) {
+      loadRoom(nextRoom)
+    })
   }
 }
 
@@ -105,25 +110,21 @@ const roomList = [
     id: 1,
     infoList: [
       {
-        text: 'This is the first info object in room 1'
+        text: 'You wake up in your bedroom. The birds are chirping and the sun is already shining. What a lovely day! You reach for your phone next to your bed and check the notifications. And oooo my god. The first thing you see  give you chills all over your body. You had completely forgot...'
       },
       {
-        text: 'This is the second info object in room 1'
+        text: 'ITS FREAKING ZOMBIE DAY!!! The terrifying but also slightly exciting day of the year where everyone, except for yourself has turned into zombies for one day. You had completely forgot about this... and havent had any time to prepare or anything... '
       },
       {
-        text: 'This is the third info object in room 1',
+        text: 'You listen carefully to your surroundings... Except for the happy birds outside, you can now hear your zombie room mate is lurking in the living room outside. What should you do next?',
         optionList: [
           {
-            text: 'Go back to room 1',
-            nextRoom: 1
-          },
-          {
-            text: 'Go to room 3',
-            nextRoom: 3
-          },
-          {
-            text: 'Go to room 2',
+            text: 'Walk out to the living room',
             nextRoom: 2
+          },
+          {
+            text: 'Sneak out the bedroom window. You dont want to risk having to kill your room mate, as he is (normally) a pretty nice guy',
+            nextRoom: 3
           }
         ]
       }
@@ -131,18 +132,66 @@ const roomList = [
   },
   {
     id: 2,
-    info: 'This is the second room',
-    optionList: [
+    infoList: [
       {
-        text: 'Go back to room 1',
-        nextRoom: 1
+        text: 'Room two'
       },
       {
-        text: 'Go to room 3',
-        nextRoom: 3
+        text: 'ITS FREAKING ZOMBIE DAY!!! The terrifying but also slightly exciting day of the year where everyone, except for yourself has turned into zombies for one day. You had completely forgot about this... and havent had any time to prepare or anything... '
+      },
+      {
+        text: 'You listen carefully to your surroundings... Except for the happy birds outside, you can now hear your zombie room mate is lurking in the living room outside. What should you do next?',
+        optionList: [
+          {
+            text: 'Walk out to the living room',
+            nextRoom: 2
+          },
+          {
+            text: 'Sneak out the bedroom window. You dont want to risk having to kill your room mate, as he is (normally) a pretty nice guy',
+            nextRoom: 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    infoList: [
+      {
+        text: 'Room three'
+      },
+      {
+        text: 'ITS FREAKING ZOMBIE DAY!!! The terrifying but also slightly exciting day of the year where everyone, except for yourself has turned into zombies for one day. You had completely forgot about this... and havent had any time to prepare or anything... '
+      },
+      {
+        text: 'You listen carefully to your surroundings... Except for the happy birds outside, you can now hear your zombie room mate is lurking in the living room outside. What should you do next?',
+        optionList: [
+          {
+            text: 'Walk out to the living room',
+            nextRoom: 2
+          },
+          {
+            text: 'Sneak out the bedroom window. You dont want to risk having to kill your room mate, as he is (normally) a pretty nice guy',
+            nextRoom: 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 0,
+    infoList: [
+      {
+        text: 'You are dead. Eaten alive. Fuck zombie day...',
+        optionList: [
+          {
+            text: 'Restart game',
+            nextRoom: 1
+          }
+        ]
       }
     ]
   }
 ]
 
-initGame()
+startGame()
