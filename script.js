@@ -136,13 +136,13 @@ const roomList = [
     roomName: 'The Bedroom',
     infoList: [
       {
-        text: 'You wake up in your bedroom. The birds are chirping and the sun is already shining. What a lovely day! You reach for your phone next to your bed and check the notifications. The first thing you see  give you chills all over your body. You had completely forgot...'
+        text: 'You wake up in your bedroom. The birds are chirping and the sun is shining. What a lovely day. You reach for your phone to check for notifications. The first thing you see will give you chills all over your body. You had completely forgot...'
       },
       {
-        text: '... ITS FREAKING ZOMBIE DAY!!! The terrifying but also low-key exciting day of the year where everyone, except for yourself has turned into zombies for one day. You had completely forgot about this... and havent had any time to prepare or anything... '
+        text: '... ITS FREAKING ZOMBIE DAY! The terrifying but low-key exciting day of the year where everyone except for yourself has turned into zombies, for one day. You completely forgot about this and havent had time to prepare or anything... '
       },
       {
-        text: '... You listen carefully to your surroundings. Except for the happy birds outside, you can now hear your zombie room mate is lurking in the living room outside. Oh my, imagine having to kill your roomie...',
+        text: '... You listen carefully to your surroundings. Except for the happy birds outside, you can now hear your zombie room mate is lurking in the living room outside. Oh my, imagine having to kill your roomie.',
         optionList: [
           {
             text: 'Walk out to the living room',
@@ -186,10 +186,10 @@ const roomList = [
         text: 'You grab the TV remote thats next to you while your roomie is rushing towards you...'
       },
       {
-        text: '.. But wait, how could anyone... ANYONE... slay a zombie with a TV-remote?!? Stupid descision...'
+        text: '.. But wait, how could anyone, ANYONE, slay a zombie with a TV-remote?!?...'
       },
       {
-        text: 'While you look stupid with your zombie slaying device, your roomie attacks you with full force. Everything turns black and you get eaten. Game over son...',
+        text: '... While you look stupid with the cute zombie slaying device, your roomie attacks you with full force. Everything turns black and you get eaten. Game over son...',
         optionList: [
           {
             text: 'Restart game',
@@ -214,11 +214,11 @@ const roomList = [
         text: '... The coast seems clear and you walk slowly out into the streets. A few blocks up the street you know there is a hardware store where you might be able to get some survival supplies. Also, a few blocks down the other way there is a park where you might find a good place to hide.',
         optionList: [
           {
-            text: 'Try to get to the hardware shop to get supplies',
+            text: 'Go to the hardware store',
             nextRoom: 'outside-store'
           },
           {
-            text: 'Try to get to the park and find a place to hide',
+            text: 'Go to the park',
             nextRoom: 'park'
           }
         ]
@@ -239,11 +239,11 @@ const roomList = [
         text: '... but also, without tools you are easy breakfast for the zombies.',
         optionList: [
           {
-            text: 'Risk it, and walk into the store via the front door',
+            text: 'Walk into the store via the front door',
             nextRoom: 'inside-store'
           },
           {
-            text: 'Skip the store and run back to the park',
+            text: 'Make your way back towards the park',
             nextRoom: 'park'
           }
         ]
@@ -258,16 +258,16 @@ const roomList = [
         text: 'You carefully open the door to the store. Eveything seems quiet in there and you walk in.'
       },
       {
-        text: 'You close the door behind you even more carefully and try to adjust your eyes to the darkness.'
+        text: '... You close the door behind you even more carefully and try to adjust your eyes to the darkness.'
       },
       {
-        text: 'All of the sudden... you hear a terrible gurgling sound behind you and see a massive zombie man walking towards you. F*ck, its zombie Mike, the store owner...'
+        text: '... All of the sudden you hear a terrible gurgling sound behind you and see a massive zombie man walking towards you. F*ck, its zombie Mike, the store owner...'
       },
       {
-        text: 'You would stand a chance at fighting him, so you quickly run the other way with Mike just behind you. On the other side of the store there are some shelves with different gardening tools.'
+        text: '... You quickly run the opposite way. On the other side of the store there are some shelves with different gardening tools...'
       },
       {
-        text: 'You run to the shelve and look for something to defend yourself with',
+        text: '... You run towards the shelve to look for something to defend yourself with',
         optionList: [
           {
             text: 'Pick up a sledge hammer',
@@ -290,13 +290,13 @@ const roomList = [
     roomName: 'Inside the Hardware Store',
     infoList: [
       {
-        text: 'You pick up the sledge hammer. Its heavy but yo try to take a big swing towards Zombie Mikes head...'
+        text: 'You pick up the sledge hammer. Its heavy, but you make a big swing towards Zombie Mikes head...'
       },
       {
-        text: '... but the hammer misses his head by just a few centimeters and just push Zombie Mike back. He looks at you with his murky eyes and launch himself towards you...',
+        text: '... and the hammer misses, by just a few centimeters. Zombie Mike looks at you with his murky eyes and launches himself towards you...',
       },
       {
-        text: '... Mike grabs your head and everything turns black. Game over son...',
+        text: '... He grabs your head and then its good night. Game over son...',
         optionList: [
           {
             text: 'Restart game',
@@ -405,7 +405,7 @@ const roomList = [
         text: '... Anyways, you pick up a thick wooden branch to have somehting to defend yourself with, just in case...',
       },
       {
-        text: '... Suddenly, two zombies walk out from the public toilett a few meters next to you. You look around and see a gorve of trees about 50 meters from you',
+        text: '... Suddenly, two zombies walk out from the public toilett a few meters next to you. You look around and see a gorve of trees about 50 meters from you.',
         optionList: [
           {
             text: 'Fight back the zombies with your wooden stick',
@@ -477,7 +477,7 @@ const roomList = [
     roomName: 'YOU SURVIVED!',
     infoList: [
       {
-        text: 'Huge congrats, you made it up the tree and stayed there for the rest of the day. Turns out zombies cant climb trees and you have officially survived Zombie Day. See you next year!',
+        text: 'HUGE CONGRATS! You made it up a tree and stayed there for the rest of the day. Turns out zombies cant climb trees, lol, and you have officially survived Zombie Day. See you next year!',
         optionList: [
           {
             text: 'Restart game',
