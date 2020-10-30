@@ -10,7 +10,7 @@ const navGrid = document.getElementById('nav-grid')
 const roomNameElement = document.getElementById('room-name')
 const nameInput = document.getElementById('name-input')
 
-// Add css styling to some text elements 
+// Add CSS styling to some text elements 
 roomInfoElement.classList.add('info-text')
 roomNameElement.classList.add('info-text', 'yellow-text')
 
@@ -33,8 +33,6 @@ roomNameElement.classList.add('info-text', 'yellow-text')
  function getPlayerName() {
    return nameInput.value
  }
-
-  
 
  /**
   * Loads the room the user is currently in and display the first info string. 
@@ -114,6 +112,10 @@ function loadOptionButtons(currentRoom, infoIndex) {
   }
 }
 
+/**
+ * Click event function for option buttons
+ * @param {string} nextRoom The room where the user is taken when clicking an option
+ */
 function selectOption(nextRoom) {
   if (nextRoom === 'exit') {
     removeElements()
