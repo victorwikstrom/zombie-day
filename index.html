@@ -14,35 +14,30 @@
   <!-- Game header -->
   <header>
     <div class='header-container flex vertical center'>
-      <div class='game-name-container flex center larger-text'>
-        <h1>Zombie Day</h1>
-      </div>
-      <div class='player-info-container flex horizontal'>
-        <h3>Player name: </h3>
-        <div class = 'plyer-info-container flex horizontal' id='player-name'>Name</div>
+      <div id="game-header" class='game-name-container flex center larger-text'>
+        <h1>Welcome to Zombie Day</h1>
       </div>
     </div>
   </header>
   
-  <!-- Main game area -->
+  <!-- Game presentation area -->
   <main>
     <div class='room-info-container'>
       <div id='room-image' class='room-image-container flex vertical center'>
-        <div id='room-name' class='room-name'>Room Name</div>
+        <div id='room-name' class='room-name'>
+
+        </div>
         <div id='room-info' class='room-info'>
-          <button class='button'>Next text</button>
+          <h3 class="yellow-text">Please enter your name</h3>
+          <input id="name-input" class="name-input" type="name">
         </div>
-        <div id='next-container'>
-        </div>
+        <div id='next-container'></div>
       </div>
       
     </div>
 
+    <!-- Navigation area -->
     <div id="nav-grid" class='nav-grid'>
-        <button class='button'>Option 1</button>
-        <button class='button'>Option 2</button>
-        <button class='button'>Option 3</button>
-        <button class='button'>Option 4</button>
     </div>
   </main> 
 </body>

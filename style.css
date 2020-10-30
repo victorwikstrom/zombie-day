@@ -53,15 +53,23 @@ h1, h2, h3 {
   width: 100%;
 }
 
+.game-name-container {
+  font-size: 4rem;
+}
+
 .player-info-container {
   width: 100%;
   padding: 0 2rem;
 }
 
+.player-name {
+  font-size: 1rem;
+}
+
 /*--------- Room info area ----------*/
 
 .room-image-container {
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   margin: auto;
 
@@ -70,7 +78,6 @@ h1, h2, h3 {
 }
 
 .room-info {
-  width: 70%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1rem;
@@ -90,11 +97,23 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
+.name-input {
+  background: transparent; 
+  font-family: Bloc;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  letter-spacing: 2px;
+
+}
+
 /*--------- Navigation area ----------*/
 
 .nav-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
   gap: 20px;
   width: 90%;
   bottom: 0;
@@ -109,7 +128,7 @@ h1, h2, h3 {
   color: white;
   border: 3px solid white;
   font-family: Bloc;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 10px;
 }
 
