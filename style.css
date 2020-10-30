@@ -32,7 +32,15 @@ body {
   padding: 1rem 2rem;
 
   font-family: Bloc;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.larger-text {
+  font-size: 2rem;
 }
 
 h1, h2, h3 {
@@ -53,7 +61,7 @@ h1, h2, h3 {
 /*--------- Room info area ----------*/
 
 .room-image-container {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   margin: auto;
 
@@ -99,9 +107,10 @@ h1, h2, h3 {
   padding: 1rem 2rem;
   background: transparent;
   color: white;
-  border: 2px solid white;
+  border: 3px solid white;
   font-family: Bloc;
   font-size: 1.5rem;
+  border-radius: 10px;
 }
 
 .button:hover {
